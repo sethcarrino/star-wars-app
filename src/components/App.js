@@ -53,8 +53,8 @@ class App extends Component {
     let vehicleList = this.state.vehicles;
     let vehicles = vehicleList.map((vehicles) => {
       return (
-        <div key={vehicles.name}>
-          <div>
+        <div key={vehicles.name} className="card">
+          <div className="card-block">
             <h3>Vehicle: {vehicles.name}</h3>
             <h4>Model: {vehicles.model}</h4>
             <div>
@@ -78,7 +78,7 @@ class App extends Component {
 
     return (
       <div className="App">
-      <div>
+      <div className="card">
         <div>
           <div>
             <h1>Star Wars</h1> <hr/> <p> The Vehicles of Star Wars </p>
