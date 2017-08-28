@@ -27,7 +27,7 @@ class App extends Component {
     // use state
     this.setState(
       {
-        pilot: this.state.value,
+        pilot: this.state.name,
         name: ''
       }
     )
@@ -43,7 +43,9 @@ class App extends Component {
     .then((data) => {
       let vehicles = data.results;
       console.log(vehicles);
-      this.setState({vehicles:vehicles})
+      this.setState({
+        vehicles:vehicles
+      })
     })
   }
 
